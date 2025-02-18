@@ -1,1 +1,70 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --oxfordBlue: #0b132b;
+    --spaceCadet: #1C2541;
+    --yinmnBlue: #3A506B;
+    --verdigris: #5BC0BE;
+    --fluorescentCyan: #6FFFE9;
+    --royalBlue: #03256C;
+    --aero: #06BEE1;
+    --greenBlue: #1768AC;
+    --coolGray: #9FA2B2;
+    --cerulean: #3C7A89;
+    --charcoal: #2E4756;
+    --gunmetal: #16262E;
+    --processCyan: #0CAADC;
+    --celestialBlue: #2892D7;
+    --white: #fff;
+}
+
+body {
+    background-color: var(--spaceCadet);
+    color: white;
+    font-family: "JetBrains Mono", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    height: 100vh;
+}
+
+app-home, app-root {
+    height: 100vh;
+}
+
+.stuffed {
+ background: red;
+}
+
+.stuffed1 {
+    background: blue;
+   }
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {  
+    body {
+        font-size: 12px;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {  
+    body {
+        font-size: 14px;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {  
+    body {
+        font-size: 16px;
+    }
+}
+
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  
+
+}
+
+/*XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {  
+
+}
