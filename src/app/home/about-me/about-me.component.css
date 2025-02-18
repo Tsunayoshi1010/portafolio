@@ -1,0 +1,23 @@
+.about-me {
+    text-align: center;
+    padding: 50px 20px;
+}
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+.about-content img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #007BFF;
+}
+.about-content .text {
+    max-width: 600px;
+    text-align: left;
+}

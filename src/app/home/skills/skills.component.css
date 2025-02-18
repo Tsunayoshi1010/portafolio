@@ -1,0 +1,18 @@
+.skills {
+    text-align: center;
+    padding: 50px;
+}
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+.skill {
+    background: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
