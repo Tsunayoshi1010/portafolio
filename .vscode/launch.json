@@ -4,7 +4,11 @@
   "configurations": [
     {
       "name": "ng serve",
+<<<<<<< HEAD
       "type": "chrome",
+=======
+      "type": "pwa-chrome",
+>>>>>>> fbc143d2a32c23d79717db42ec31c4af450ea7d3
       "request": "launch",
       "preLaunchTask": "npm: start",
       "url": "http://localhost:4200/"

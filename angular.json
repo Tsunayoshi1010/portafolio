@@ -1,5 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+<<<<<<< HEAD
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -14,6 +15,22 @@
         },
         "@schematics/angular:pipe": {
           "standalone": false
+=======
+  "cli": {
+    "analytics": "5ce3425f-4a64-4fa3-b6ee-94809d0b8f07"
+  },
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "portafolio": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "sass"
+        },
+        "@schematics/angular:application": {
+          "strict": true
+>>>>>>> fbc143d2a32c23d79717db42ec31c4af450ea7d3
         }
       },
       "root": "",
@@ -21,6 +38,7 @@
       "prefix": "app",
       "architect": {
         "build": {
+<<<<<<< HEAD
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/hover-munoz",
@@ -45,12 +63,31 @@
             "ssr": {
               "entry": "src/server.ts"
             }
+=======
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/portafolio",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.app.json",
+            "inlineStyleLanguage": "sass",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.sass"
+            ],
+            "scripts": []
+>>>>>>> fbc143d2a32c23d79717db42ec31c4af450ea7d3
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
+<<<<<<< HEAD
                   "maximumWarning": "500kB",
                   "maximumError": "1MB"
                 },
@@ -58,14 +95,38 @@
                   "type": "anyComponentStyle",
                   "maximumWarning": "4kB",
                   "maximumError": "8kB"
+=======
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+>>>>>>> fbc143d2a32c23d79717db42ec31c4af450ea7d3
                 }
               ],
               "outputHashing": "all"
             },
             "development": {
+<<<<<<< HEAD
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+=======
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+>>>>>>> fbc143d2a32c23d79717db42ec31c4af450ea7d3
             }
           },
           "defaultConfiguration": "production"
@@ -74,20 +135,35 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
+<<<<<<< HEAD
               "buildTarget": "HoverMunoz:build:production"
             },
             "development": {
               "buildTarget": "HoverMunoz:build:development"
+=======
+              "browserTarget": "portafolio:build:production"
+            },
+            "development": {
+              "browserTarget": "portafolio:build:development"
+>>>>>>> fbc143d2a32c23d79717db42ec31c4af450ea7d3
             }
           },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
+<<<<<<< HEAD
           "builder": "@angular-devkit/build-angular:extract-i18n"
+=======
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "portafolio:build"
+          }
+>>>>>>> fbc143d2a32c23d79717db42ec31c4af450ea7d3
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
+<<<<<<< HEAD
             "polyfills": [
               "zone.js",
               "zone.js/testing"
@@ -101,6 +177,19 @@
             ],
             "styles": [
               "src/styles.css"
+=======
+            "main": "src/test.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.spec.json",
+            "karmaConfig": "karma.conf.js",
+            "inlineStyleLanguage": "sass",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.sass"
+>>>>>>> fbc143d2a32c23d79717db42ec31c4af450ea7d3
             ],
             "scripts": []
           }
@@ -108,7 +197,11 @@
       }
     }
   },
+<<<<<<< HEAD
   "cli": {
     "analytics": "4d6987a6-6e57-4014-b952-976b76bcd89e"
   }
+=======
+  "defaultProject": "portafolio"
+>>>>>>> fbc143d2a32c23d79717db42ec31c4af450ea7d3
 }

@@ -8,10 +8,19 @@ describe('HomeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+<<<<<<< HEAD
       declarations: [HomeComponent]
     })
     .compileComponents();
 
+=======
+      declarations: [ HomeComponent ]
+    })
+    .compileComponents();
+  });
+
+  beforeEach(() => {
+>>>>>>> fbc143d2a32c23d79717db42ec31c4af450ea7d3
     fixture = TestBed.createComponent(HomeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
